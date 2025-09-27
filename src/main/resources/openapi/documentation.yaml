@@ -1,0 +1,22 @@
+openapi: 3.0.1
+info:
+  title: Student API
+  version: 1.0.0
+paths:
+  /students:
+    get:
+      summary: Get all students
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
